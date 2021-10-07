@@ -11,6 +11,7 @@ Vue.use(VueAxios, axios);
 Vue.config.productionTip = false;
 
 import Home from './components/Home.vue';
+import Fishe from './components/Fishe.vue';
 
 const routes = [
   {
@@ -18,7 +19,11 @@ const routes = [
       path: '/',
       component: Home
   },
-
+  {
+    name: 'fishe',
+    path: '/fishe',
+    component: Fishe
+  }
 
 ];
 
