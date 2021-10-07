@@ -7,6 +7,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "view": "start https://grantbgreat.github.io",
     "lint": "vue-cli-service lint",
     "api": "nodemon ./api/index.js"
   },
