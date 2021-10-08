@@ -12,17 +12,23 @@ Vue.config.productionTip = false;
 
 import Home from './components/Home.vue';
 import Fishe from './components/Fishe.vue';
+import IsProgrammingCool from './components/IsProgrammingCool';
 
 const routes = [
   {
-      name: 'home',
-      path: '/',
-      component: Home
+    name: 'home',
+    path: '/',
+    component: Home
   },
   {
     name: 'fishe',
     path: '/fishe',
     component: Fishe
+  },
+  {
+    name: 'isprogrammingcool',
+    path: '/isprogrammingcool',
+    component: IsProgrammingCool
   }
 
 ];
