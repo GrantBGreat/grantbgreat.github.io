@@ -1,7 +1,7 @@
 {
-  "name": "lazy-covid-solver",
+  "name": "grantbgreat.github.io",
   "version": "0.0.9",
-  "description": "Too lazy to complete the Bayview Glen school covid screening each day? Say no more.",
+  "description": "That cool grant kid has a website... this is it!",
   "main": "index.js",
   "private": true,
   "scripts": {
