@@ -13,6 +13,7 @@ Vue.config.productionTip = false;
 import Home from './components/Home.vue';
 import Fishe from './components/Fishe.vue';
 import IsProgrammingCool from './components/IsProgrammingCool';
+import Maths from './components/Math';
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
     name: 'isprogrammingcool',
     path: '/isprogrammingcool',
     component: IsProgrammingCool
+  },
+  {
+    name: 'math',
+    path: '/math',
+    component: Maths
   }
 
 ];
