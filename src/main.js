@@ -14,7 +14,6 @@ import Home from './components/Home.vue';
 import Fishe from './components/Fishe.vue';
 import IsProgrammingCool from './components/IsProgrammingCool';
 import Maths from './components/Math';
-import PartyHat from './components/PartyHat';
 
 const routes = [
   {
@@ -36,11 +35,6 @@ const routes = [
     name: 'math',
     path: '/math',
     component: Maths
-  },
-  {
-    name: 'partyhat',
-    path: '/partyhat',
-    component: PartyHat
   }
 
 ];
