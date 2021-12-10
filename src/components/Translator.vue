@@ -76,7 +76,7 @@ export default {
       let output = "";
       
       input.split('').forEach((letter) => {
-        output += letter;
+        output += this.constants.SCUFFED.charAt(this.constants.BASE.indexOf(letter));
       });
 
       document.querySelector("#final").value = output;
