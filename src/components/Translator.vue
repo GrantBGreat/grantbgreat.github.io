@@ -18,7 +18,7 @@
           id="input"
           type="form"
           placeholder="Enter Text"
-          @keyup="display()"
+          @keyup="translate()"
           class="
             form-control
             rounded-md
@@ -59,16 +59,30 @@
 <script>
 export default {
   name: "Home",
+
+  data: () => ({
+    constants : {
+      BASE : "qwertyuiopasdfghjklzxcvbnm1234567890",
+      SCUFFED : "poiuytrewqlkjhgfdsamnbvcxz0987654321"
+    },
+    settings : {
+      flipped : false
+    }
+  }),
+
   methods: {
     translate() {
-      let input = document.querySelector("#input").value;
+      let input = document.querySelector("#input").value.toLowerCase();
+      let output = "";
       
-      // translate here
+      input.split('').forEach((letter) => {
+        output += letter;
+      });
 
-      document.querySelector("#final").value = input;
+      document.querySelector("#final").value = output;
     },
     flip() {
-      //this function is for the flipping of the two boxes. 
+      this.settings.flipped = !this.settings.flipped;
     }
   },
 };
