@@ -12,7 +12,15 @@
       <div class="flex space-x-3 mb-4 text-sm font-medium">
         <div class="flex-auto flex space-x-3"></div>
       </div>
-      <icon @click.native="flip()" id = 'icon' name="refresh" class="ml-44 mb-2 w-7 h-7"/>
+      <div class="flex">
+        <div class="grid grid-cols-3 gap-2 content-end w-20">
+          <icon @click.native="clear()" id = 'icon' name="refresh" alt="reset" class="ml-44 mb-2 w-7 h-7 cursor-pointer"/>
+          <icon @click.native="flip()" id = 'icon' name="switch-horizontal" alt="flip" class="ml-44 mb-2 w-7 h-7 cursor-pointer"/>
+          <a href="https://github.com/GrantBGreat/scuffedlang/releases/latest" target="_blank" rel="noopener noreferrer">
+            <icon id = 'icon' name="download" alt="download" class="ml-44 mb-2 w-7 h-7 cursor-pointer"/>
+          </a>
+        </div>
+      </div>
       <div class="grid grid-cols-2">
         <textarea
           id="input"
@@ -64,32 +72,32 @@ export default {
     constants : {
       BASE : "qwertyuiopasdfghjklzxcvbnm1234567890",
       SCUFFED : "poiuytrewqlkjhgfdsamnbvcxz0987654321"
-    },
-    settings : {
-      flipped : false
     }
   }),
 
   methods: {
     translate() {
-      let input = document.querySelector("#input").value.toLowerCase();
+      let input = document.querySelector("#input").value;
       let output = "";
       
       input.split('').forEach((letter) => {
-        if (this.constants.BASE.indexOf(letter) != -1)
-          if (! this.settings.flipped) {
-            output += this.constants.SCUFFED.charAt(this.constants.BASE.indexOf(letter));
-          } else {
-            output += this.constants.BASE.charAt(this.constants.SCUFFED.indexOf(letter));
-          }
-        else
+        if (this.constants.BASE.indexOf(letter) != -1) {
+          output += this.constants.SCUFFED.charAt(this.constants.BASE.indexOf(letter));
+        } else {
           output += letter;
+        }
       });
 
       document.querySelector("#final").value = output;
     },
+    clear() {
+      document.querySelector("#input").value = "";
+      document.querySelector("#final").value = "";
+    },
     flip() {
-      this.settings.flipped = !this.settings.flipped;
+      const input = document.querySelector("#input").value
+      document.querySelector("#input").value = document.querySelector("#final").value
+      document.querySelector("#final").value = input;
     }
   },
 };
