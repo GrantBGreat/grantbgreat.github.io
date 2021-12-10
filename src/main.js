@@ -14,6 +14,7 @@ import Home from './components/Home.vue';
 import Fishe from './components/Fishe.vue';
 import IsProgrammingCool from './components/IsProgrammingCool';
 import Maths from './components/Math';
+import Translator from './components/Translator.vue';
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     name: 'math',
     path: '/math',
     component: Maths
+  },
+  {
+    name: 'translator',
+    path: '/translator',
+    component: Translator
   }
 
 ];
