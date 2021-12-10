@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>soon™</h1>
-    <p>^ that was written 8 months ago lol</p>
+    <p>^ that was written 9 months ago lol</p>
 
     <div class="absolute bottom-0 right-0">
       <p class="text-xs italic font-thin text-right">shh don't check console</p>
