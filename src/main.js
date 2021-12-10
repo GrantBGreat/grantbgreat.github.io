@@ -8,6 +8,10 @@ import VueAxios from 'vue-axios';
 import axios from 'axios';
 Vue.use(VueAxios, axios);
 
+import VIcons from 'vue-tailwind-icons';
+Vue.use(VIcons);
+Vue.use(VIcons, { set: 'outline' })
+
 Vue.config.productionTip = false;
 
 import Home from './components/Home.vue';

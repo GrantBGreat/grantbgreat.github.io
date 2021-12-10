@@ -77,7 +77,11 @@ export default {
       
       input.split('').forEach((letter) => {
         if (this.constants.BASE.indexOf(letter) != -1)
-          output += this.constants.SCUFFED.charAt(this.constants.BASE.indexOf(letter));
+          if (! this.settings.flipped) {
+            output += this.constants.SCUFFED.charAt(this.constants.BASE.indexOf(letter));
+          } else {
+            output += this.constants.BASE.charAt(this.constants.SCUFFED.indexOf(letter));
+          }
         else
           output += letter;
       });
