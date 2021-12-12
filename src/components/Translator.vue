@@ -70,8 +70,8 @@ export default {
 
   data: () => ({
     constants : {
-      BASE : "qwertyuiopasdfghjklzxcvbnm1234567890",
-      SCUFFED : "poiuytrewqlkjhgfdsamnbvcxz0987654321"
+      BASE : "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890",
+      SCUFFED : "POIUYTREWQLKJHGFDSAMNBVCXZpoiuytrewqlkjhgfdsamnbvcxz0987654321"
     }
   }),
 
