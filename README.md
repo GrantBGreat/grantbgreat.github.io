@@ -11,4 +11,4 @@ See [Vue Configuration Reference](https://cli.vuejs.org/config/).
 * [2048 Fork](https://grantbgreat.github.io/2048)
 * [Fishe](https://grantbgreat.github.io/#/fishe)
 * [Programmer moment](https://grantbgreat.github.io/#/isprogrammingcool)
-* [George Orwell 1984 moment](https://grantbgreat.github.io/#/maths)
+* [George Orwell 1984 moment](https://grantbgreat.github.io/#/math)
