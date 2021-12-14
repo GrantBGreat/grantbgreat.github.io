@@ -3,8 +3,9 @@ My personal website **(STILL IN DEVELOPEMENT)**
 
 See [Vue Configuration Reference](https://cli.vuejs.org/config/).
 
+<br>
 
-### Pages
+# Pages
 * [Home](https://grantbgreat.github.io)
 * [Translator](https://grantbgreat.github.io/#/translator)
 * [2048 Fork](https://grantbgreat.github.io/2048)
