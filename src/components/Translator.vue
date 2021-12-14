@@ -43,7 +43,9 @@
         />
         <textarea
           placeholder="Translation"
-          disabled="disabled"
+          readonly
+          onclick="this.select()"
+          v-on:click="copyOutput()"
           id="final"
           class="
             form-control
@@ -98,6 +100,11 @@ export default {
       const input = document.querySelector("#input").value
       document.querySelector("#input").value = document.querySelector("#final").value
       document.querySelector("#final").value = input;
+    },
+    copyOutput() {
+      navigator.clipboard.writeText(document.querySelector("#final").value);
+
+      alert("Copied output text.");
     }
   },
 };
