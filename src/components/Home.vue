@@ -5,7 +5,7 @@
         Grant's Website
       </h1>
       <div class="grid gap-4 grid-cols-2">
-        
+        <!-- bahahahahahhahahaha gridddd -->
       </div>
     </div>
   </div>
