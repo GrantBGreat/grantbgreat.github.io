@@ -1,5 +1,5 @@
 # [grantbgreat.github.io](https://grantbgreat.github.io/)
-My personal website **(STILL IN DEVELOPEMENT)**
+My personal website **(STILL IN DEVELOPEMENT)**<sup>probably will be forever lul</sup>
 
 See [Vue Configuration Reference](https://cli.vuejs.org/config/).
 
