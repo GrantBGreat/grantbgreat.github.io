@@ -4,9 +4,27 @@
       <h1 class="text-gray-400 text-4xl font-semibold font-serif uppercase mb-24 md:text-8xl">
         Grant's Website
       </h1>
-      <div class="grid gap-4 grid-cols-2">
-        <!-- bahahahahahhahahaha gridddd -->
-      </div>
+      <!-- <div class="grid gap-4 grid-cols-2">
+        <!- bahahahahahhahahaha gridddd ->
+        <div class="w-full rounded">
+          <p>boo</p>
+        </div>
+        <div class="w-full rounded">
+          <p>boo</p>
+        </div>
+        <div class="w-full rounded">
+          <p>boo</p>
+        </div>
+        <div class="w-full rounded">
+          <p>boo</p>
+        </div>
+        <div class="w-full rounded">
+          <p>boo</p>
+        </div>
+        <div class="w-full rounded">
+          <p>boo</p>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>

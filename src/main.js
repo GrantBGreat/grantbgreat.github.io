@@ -19,6 +19,7 @@ import Fishe from './components/Fishe.vue';
 import IsProgrammingCool from './components/IsProgrammingCool';
 import Maths from './components/Math';
 import Translator from './components/Translator.vue';
+import Shrek from './components/Shrek.vue'
 
 const routes = [
   {
@@ -45,6 +46,11 @@ const routes = [
     name: 'translator',
     path: '/translator',
     component: Translator
+  },
+  {
+    name: 'shrek',
+    path: '/shrek',
+    component: Shrek
   }
 
 ];
