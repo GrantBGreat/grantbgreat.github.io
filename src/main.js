@@ -20,6 +20,7 @@ import IsProgrammingCool from './components/IsProgrammingCool';
 import Maths from './components/Math';
 import Translator from './components/Translator.vue';
 import Shrek from './components/Shrek.vue'
+import TheButton from './components/thebutton.vue';
 
 const routes = [
   {
@@ -51,6 +52,11 @@ const routes = [
     name: 'shrek',
     path: '/shrek',
     component: Shrek
+  },
+  {
+    name: 'button',
+    path: '/button',
+    component: TheButton
   }
 
 ];
